@@ -8,7 +8,7 @@ import {WinstonLoggerAdapter} from './winston-logger.adapter';
     providers: [
         {
             provide: LoggerAdapterToken,
-            useClass: LoggerAdapter,
+            useClass: WinstonLoggerAdapter,
         },
         GrpcLoggingInterceptor
     ],
